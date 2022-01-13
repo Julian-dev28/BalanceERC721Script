@@ -15,7 +15,7 @@ _You can provide empty strings for local development_
 
 
 Change addresses and tokenIds found in `BalanceERC721Script/helpers/constants.ts`<br>
-Change target NFT addresses in scripts to your preference<br>
+Change target NFT addresses in scripts<br>
 
 Users can use either script to quickly view tokenId Owners
 ## Scripts
