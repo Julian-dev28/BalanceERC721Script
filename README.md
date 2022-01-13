@@ -14,7 +14,7 @@ Change [`envExample.json`](./envExample.json) to ``.env.json`` and input the req
 _You can provide empty strings for local development_
 
 
-Change adddresses and tokenIds found in `BalanceERC721Script/helpers/constants.ts`<br>
+Change addresses and tokenIds found in `BalanceERC721Script/helpers/constants.ts`<br>
 Change target NFT addresses in scripts to your preference<br>
 
 Users can use either script to quickly view tokenId Owners
