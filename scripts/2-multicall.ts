@@ -47,7 +47,7 @@ const Web3 = require("web3");
   // multicall
   // ----------------------------------------------------------------------------------
 
-  // address of multicall contract for ETH mainnet
+  // address of multicall contract for Avalanche mainnet
   const multicallAddress = "0xE84FaeC71b906B8325d8E9cd1B54a3cDCFb2697F";
   // multicall abi to interact with contract
   const multicallAbi = [
