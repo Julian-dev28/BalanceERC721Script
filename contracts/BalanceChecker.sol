@@ -8,8 +8,7 @@ struct tokenIdAndOwner {
   address owner;
 }
 
-contract BalanceCheckNFT {
-  /* Fallback function, don't accept any ETH */
+
   function tokenBalance(address tokenAddress, uint256[] memory tokenId)
     public
     view
