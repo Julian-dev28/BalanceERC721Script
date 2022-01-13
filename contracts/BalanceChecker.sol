@@ -8,7 +8,7 @@ struct tokenIdAndOwner {
   address owner;
 }
 
-
+contract BalanceCheckerNFT {
   function tokenBalance(address tokenAddress, uint256[] memory tokenId)
     public
     view
