@@ -1,14 +1,13 @@
-const { ethers, waffle} = require("hardhat");
-import {BULKTOKENIDS, tokenAbi} from './constants';
-import {nftAbi} from './constants'
+import { ethers } from 'hardhat';
+import { NFT_ABI } from './constants';
 
 async function main() {
-    const provider = ethers.provider
-    const tokenId = 50
-    const NFTAddress = '0x0c2485d08c7611ceafdbb370dad4fa86b5935ff4';
-    let nft = new ethers.Contract(NFTAddress, nftAbi, provider)
-    let owner = await nft.ownerOf(tokenId) 
-    console.log({tokenId, owner})
+    const PROVIDER = ethers.provider
+    const TOKEN_ID = 50
+    const NFT_ADDRESS = '0x0c2485d08c7611ceafdbb370dad4fa86b5935ff4';
+    let NFT = new ethers.Contract(NFT_ADDRESS, NFT_ABI, PROVIDER)
+    let OWNER = await NFT.ownerOf(TOKEN_ID) 
+    console.log({TOKEN_ID, OWNER})
 }
 
 main()

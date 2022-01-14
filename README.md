@@ -1,6 +1,6 @@
-# ERC721 Balance Checking script
+# ERC721 Ownership and AVAX Balance Checking scripts
 
-See `BalanceERC721Script/scripts`
+See `./scripts`
 
 ## Local development
 
@@ -14,7 +14,7 @@ Change [`envExample.json`](./envExample.json) to ``.env.json`` and input the req
 _You can provide empty strings for local development_
 
 
-Change addresses and tokenIds found in `BalanceERC721Script/helpers/constants.ts`<br>
+Change addresses and tokenIds found in `./scripts/constants.ts`<br>
 Change target NFT addresses in scripts<br>
 
 Users can use either script to quickly view tokenId Owners
@@ -24,12 +24,15 @@ yarn compile
 ```
 
 ```zsh
-yarn getBalance --network mainnet
+yarn getOwners --network mainnet
 ```
 
 ```zsh
-yarn getBalanceAlt --network mainnet
+yarn getOwner --network mainnet
 ```
 
+```zsh
+yarn getBalances --network mainnet
+```
 see [`package.json`](./package.json) for more
 
