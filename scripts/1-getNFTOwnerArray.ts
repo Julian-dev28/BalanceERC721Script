@@ -9,7 +9,7 @@ async function main() {
     const BALANCE_CHECKER = await CONTRACT.attach(ADDRESS)
 
     const NFT_OWNERS = await BALANCE_CHECKER.tokenBalance(NFT_ADDRESS,BULKTOKENIDS)
-    console.log(NFT_OWNERS)
+    console.log(JSON.stringify(NFT_OWNERS),null,2)
 
 }
 
