@@ -6,7 +6,7 @@ async function main() {
     const CONTRACT = await ethers.getContractFactory('BalanceCheckerAVAX')
     const BALANCE_CHECKER = await CONTRACT.attach('0xD3F4C46A7CB7b74c5183F950C8e7aFBA90466148')
     const BALANCES = await BALANCE_CHECKER.tokenBalance(ADDRESSES)
-    console.log({BALANCES});
+    console.log(JSON.stringify({BALANCES}),null, 2);
 
 }
 
