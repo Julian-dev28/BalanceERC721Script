@@ -1,38 +1,31 @@
-# ERC721 Ownership and AVAX Balance Checking scripts
+# ERC721 Ownership and AVAX Balance Checking Scripts
 
-See `./scripts`
+This project provides scripts for checking the ownership of ERC721 tokens and AVAX balances on the Avalanche blockchain. The scripts can be found in the `./scripts` directory.
 
-## Local development
+## Local Development
 
-In CLI, run the command:
+To use the scripts, follow these steps:
 
-```zsh
-yarn
-```
+1. Install dependencies by running `yarn` in the command line interface (CLI).
+2. Change `envExample.json` to `.env.json` and input the required data. You can provide empty strings for local development.
+3. Change the addresses and token IDs found in `./scripts/constants.ts`.
+4. Change the target NFT addresses in the scripts.
 
-Change [`envExample.json`](./envExample.json) to ``.env.json`` and input the required data <br>
-_You can provide empty strings for local development_
-
-
-Change addresses and tokenIds found in `./scripts/constants.ts`<br>
-Change target NFT addresses in scripts<br>
-
-Users can use either script to quickly view tokenId Owners
 ## Scripts
-```zsh
-yarn compile
-```
 
-```zsh
-yarn getOwners --network mainnet
-```
+The following scripts are available:
 
-```zsh
-yarn getOwner --network mainnet
-```
+- `yarn compile`: Compiles the smart contracts.
+- `yarn getOwners --network mainnet`: Displays the owners of the ERC721 tokens on the Avalanche mainnet.
+- `yarn getOwner --network mainnet`: Displays the owner of a single ERC721 token on the Avalanche mainnet.
+- `yarn getBalances --network mainnet`: Displays the AVAX balances of the specified addresses on the Avalanche mainnet.
 
-```zsh
-yarn getBalances --network mainnet
-```
-see [`package.json`](./package.json) for more
+For more information on available scripts, please see the `package.json` file.
 
+## Contributing
+
+This project is open-source, and contributions are welcome. To contribute, please fork this repository and submit a pull request with your changes. Before submitting a pull request, please make sure that your changes adhere to the project's coding standards and pass all tests.
+
+## License
+
+This project is licensed under the MIT License.
